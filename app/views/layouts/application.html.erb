@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <title>Layoutr</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => false %>
+  <%= javascript_include_tag "application", controller_name, "data-turbolinks-track" => false %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  
+  
+  <%= yield %>
+  
+  <div class="links">
+    <%= link_to 'what', welcome_whatup_path, class:"linky" %>
+    <%= link_to 'homish', welcome_path, class:"linky" %>
+  </div>
+
+  </body>
+</html>

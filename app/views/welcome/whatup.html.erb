@@ -1,0 +1,10 @@
+<h1 class="logo"> {{titleMe}} </h1>
+  <form>
+  <input type="text" ng-model="titleMe" placeholder="Enter">
+  </form>
+
+<ul>
+  <% @status.each do |value| %>
+    <h6>I am <%=  value %></h6>
+   <% end %>
+</ul>

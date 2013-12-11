@@ -1,0 +1,21 @@
+<h1 class="logo"> {{titleMe}} </h1>
+  <form>
+  <input type="text" ng-model="titleMe" placeholder="Enter">
+  </form>
+
+<h1>hello <%= @amuled[0] %></h1>
+<h2>array is <%= @amuled.length %> big & contents are <%= @amuled %></h2>
+<h4>ls -
+  <%= 5.times {
+  print "*" } %>
+</h4>
+  
+<ul>
+  <% @amuled.each do |value| %>
+    <li><%= link_to value %></li>
+   <% end %>
+</ul>
+
+
+
+
